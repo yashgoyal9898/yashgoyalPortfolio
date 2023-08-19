@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --solid-heading: #42446E;
+    --dark-content: #666;
+    --light-blue:  #13B0F5;
+    --dark-pink: #E70FAA;
+    --dark-black: #000;
+  }
+/* Banner Section */
+.banner-section, .tect-stack-section {
+    padding-top: 150px;
+}
+.banner-left h1, .banner-left p {
+    color: var(--solid-heading);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    white-space: pre-wrap;
+    margin: 0px;
+}
+.banner-right {
+    text-align: center;
+}
+.banner-right img {
+    width: 70%;
+    text-align: center;
+}
+.name {
+    background: var(--gradient-heading, linear-gradient(90deg, #13B0F5 2.60%, #E70FAA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+/* Tect Stack */
+.sec-top-heading h2 {
+    color: var(--solid-heading);
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+.sec-top-heading p {
+    color: var(--dark-content);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 40px;
+    margin: 0px;
+}
+.tectstack-logo {
+    padding: 90px 0px;
+}
+.tectstack-logo img {
+    width: 100%;
+}
+/* Project Section */
+.projects-content {
+    padding-top: 90px;
+}
+.project-card-content {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+}
+.project-card-content img {
+    width: 100%;
+}
+.pccontent {
+    padding: 25px;
+}
+.pccontent h3 {
+    color: var(--solid-heading);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.pccontent p {
+    color: var(--dark-content);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0px;
+    padding: 12px 0px;
+}
+.pccontent h5 {
+    color: var(--solid-heading, #42446E);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.live-links {
+    display: flex;
+    justify-content: space-between;
+}
+.live-links a {
+    color: var(--dark-black);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+    margin: 0px 0px;
+    padding: 10px 26px;
+}
+.live-links a:first-child, .live-links a:last-child {
+    position: relative;
+}
+.live-links a:first-child::before {
+    content: url(../img/live-icon.svg);
+    position: absolute;
+    top: 14px;
+    left: -5px;
+}
+.live-links a:last-child::before {
+    content: url(../img/github-icon.png);
+    position: absolute;
+    top: 14px;
+    left: -5px;
+}
+@media (max-width: 1200px) {
+    .banner-left h1, .banner-left p, .name {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .banner-right img{
+        width: 80%;
+    }
+    .sec-top-heading h2 {
+        font-size: 40px;
+        line-height: 26px;
+    }
+    .sec-top-heading p {
+        font-size: 30px;
+        line-height: 26px;
+    }
+    .tectstack-logo, .projects-content {
+        padding: 80px 0px;
+    }
+    .pccontent h3 {
+        text-align: start;
+        font-size: 25px;
+        margin: 0px;
+        padding: 5px 0px;
+    }
+    .pccontent p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .banner-section, .tect-stack-section, .projects-section {
+        padding-top: 50px;
+    }
+    .banner-left h1, .banner-left p, .name {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .banner-right {
+        padding-top: 50px;
+    }
+    .banner-right img{
+        width: 80%;
+    }
+    .sec-top-heading h2 {
+        font-size: 30px;
+        line-height: 26px;
+    }
+    .sec-top-heading p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .tectstack-logo, .projects-content {
+        padding: 50px 0px;
+    }
+    .pccontent h3 {
+        text-align: start;
+        font-size: 25px;
+        margin: 0px;
+        padding: 5px 0px;
+    }
+    .pccontent p {
+        font-size: 16px;
+    }
+}
