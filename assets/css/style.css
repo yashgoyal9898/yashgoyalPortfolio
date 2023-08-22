@@ -344,6 +344,9 @@ header {
     font-size: 30px;
     line-height: 40px;
   }
+  .banner-left {
+    text-align: center;
+  }
   .banner-right {
     padding-top: 50px;
     text-align: center;
@@ -436,5 +439,31 @@ header {
   .fa-close {
     color: white;
     font-size: 50px;
+  }
+  .frl {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  .footer-bottom {
+    text-align: center;
+    font-size: 18px;
+  }
+  .fr-left,
+  .fr-middle {
+    text-align: center;
+  }
+  .fr-right .social-icons img {
+    width: 30px;
+  }
+  .fr-right .social-icons {
+    padding: 10px 20px;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .fr-middle h5,
+  .fr-left h4 {
+    margin: 0px;
+    padding-bottom: 20px;
   }
 }
