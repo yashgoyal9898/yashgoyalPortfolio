@@ -26,8 +26,10 @@ header {
 }
 .navright {
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 0px;
   align-items: center;
+  flex: 0 0 67%;
 }
 .nav-items {
   display: flex;
@@ -61,7 +63,9 @@ header {
 }
 
 /* Banner Section */
-.banner-section,
+.banner-section {
+  padding-top: 80px;
+}
 .tect-stack-section {
   padding-top: 150px;
 }
@@ -122,6 +126,9 @@ header {
   width: 100%;
 }
 /* Project Section */
+.projects-section {
+  padding-top: 35px;
+}
 .projects-content {
   padding-top: 90px;
 }
@@ -213,6 +220,8 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  margin: 0px;
+  padding: 0px;
 }
 .fr-middle {
   padding: 0px;
@@ -224,6 +233,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  margin: 0px;
 }
 .fr-right .social-icons {
   display: flex;
@@ -300,7 +310,8 @@ header {
     display: flex;
     gap: 40px;
     align-items: center;
-  }
+    flex: 0 0 70%;
+}
   .nav-items {
     display: flex;
     gap: 20px;
